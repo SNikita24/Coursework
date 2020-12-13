@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Xml-документ, хранящий информацию о студенте-->
+<!DOCTYPE student [
+<!ELEMENT student (name, faculty, specialty, group, year)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT faculty (#PCDATA)>
+<!ELEMENT specialty (#PCDATA)>
+<!ELEMENT group (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+]>
+
+
+<student>
+	<name>Сероокий Никита Дмитриевич</name>
+	<faculty>ИТ</faculty>
+	<specialty>ПОИБМС</specialty>
+	<group>9</group>
+	<year>2020</year>
+</student>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Игрок Liverpool</title>
+	<link rel="shortcut icon" href="images/lv.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/slick.css">
+	<link rel="stylesheet" href="styles/slick-theme.css">
+	<script src="scripts/jquery-3.4.1.min.js"></script>
+	<script src="scripts/slick.min.js"></script>
+	<script src="scripts/counter.js"></script>
+	<script src="scripts/check-district.js"></script>
+	<script src="scripts/search.js"></script>
+	<script src="scripts/museum.js" defer></script>
+	<script>
+    $(document).ready(function(){
+		$('.gallery').slick({
+			slidesToScroll: 1,
+  			autoplay: true,
+  			autoplaySpeed: 3000,
+			speed: 750,
+		});
+    });
+	</script>
+	<style>
+		.contacts>*{
+			margin: 10px;
+		}
+		.field:before{
+			display:inline-block;
+    		height:20px;
+			width: 20px;
+			content: " ";
+			margin-right: 10px;
+		}
+		#address:before{
+			background:url(images/placeholder.svg) no-repeat 0 0;
+		}
+		#time:before{
+			background:url(images/clock.svg) no-repeat 0 0;
+		}
+		#phone:before{
+			background:url(images/phone.svg) no-repeat 0 0;
+		}
+		#email:before{
+			background:url(images/envelope.svg) no-repeat 0 0;
+		}
+		#cost:before{
+			background:url(images/cost.svg) no-repeat 0 0;
+		}
+		.info{
+			white-space: pre-line;
+			margin-bottom: 25px;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="header">
+			<a href="index.html">
+				<div class="logo"><img src="images/lvp.png" alt="Логотип сайта"></div>
+				<div class="title">Liverpool FC</div>
+			</a>
+			<div class="menu">
+				<div class="button" id="catalog">
+					<a href="catalog.html" onclick="send(null)">Состав</a>
+					<ul class="districts">
+						<li><a href="catalog.html" onclick="send(0)">Главный тренер</a></li>
+						<li><a href="catalog.html" onclick="send(1)">Вратари</a></li>
+						<li><a href="catalog.html" onclick="send(2)">Защитники</a></li>
+						<li><a href="catalog.html" onclick="send(3)">Полузащитники</a></li>
+						<li><a href="catalog.html" onclick="send(4)">Нападающие</a></li>
+					</ul>
+				</div>
+				<div class="button"><a href="map.html">Карта</a></div>
+				<div class="button"><a href="about.html">О сайте</a></div>
+			</div>
+			<form class="search" action="catalog.html">
+				<input type="search" name="input1" placeholder="Поиск" class="input" />
+				<button class="submit" onclick="Search()"></button>
+			</form>
+		</div>
+
+		<div class="main">
+			<div class="content">
+				<ul class="bread_crumbs">
+					<li>&rtrif; <a href="index.html">Главная</a></li>
+					<li>&rtrif; <a href="catalog.html">Каталог</a></li>
+					<li>&rtrif; </li>
+				</ul>
+
+				<div class="article">
+					<h2 class="heading">Игрок</h2>
+					<div class="gallery">
+					</div>
+					<div class="contacts">
+						<hr>
+						<div class="field" id="address">Имя: </div>
+						<div class="field" id="time">Возраст: </div>
+						<div class="field" id="phone">Позиция </div>
+						<div class="field" id="email">Инстаграм: </div>
+						<div class="field" id="cost">Стоимость: </div>
+						<hr>
+					</div>
+					<div class="info">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="counter">
+				<a href="https://metrika.yandex.ru/stat/?id=56252041&amp;from=informer" target="_blank" rel="nofollow">
+					<img src="https://informer.yandex.ru/informer/56252041/3_0_ECECECFF_CCCCCCFF_0_pageviews"
+						 style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" 
+						 class="ym-advanced-informer" data-cid="56252041" data-lang="ru" />
+				</a>
+				<img src="https://mc.yandex.ru/watch/56252041" style="position:absolute; left:-9999px;" alt="" />
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

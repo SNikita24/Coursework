@@ -1,0 +1,235 @@
+.main {
+	flex-direction: row;
+	padding: 5px 5px 0px 0px;
+}
+.content{
+	margin: 0px;
+}
+.left-menu {
+	background-color: black;
+	width: 25%;
+	margin: 10px;
+	align-self: flex-start;
+	text-align: left;
+	padding: 10px 20px;
+	background-color: ghostwhite;
+	box-shadow: 1px 1px 2px grey;
+}
+.left-menu b{
+	display: block;
+	margin-top: 15px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+
+/* Прозрачный исходный checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Создание своего checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #e0dedf;
+}
+
+/* При наведении */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* Стиль нажатого checkbox */
+.container input:checked ~ .checkmark {
+  background-color: black;
+}
+
+/* checked, когда checked исходный */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Новый значок checkbox */
+.container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#buttons{
+	display: flex;
+	flex-direction: row-reverse;
+}
+#buttons>*{
+	margin: auto 15px;
+	cursor: pointer;
+}
+#find{
+  color: black;
+  text-decoration: none; 
+  user-select: none; 
+  background: inherit;
+  padding: 10px 20px; 
+  outline: none; 
+  border: 2px solid black;
+} 
+#find:hover{ 
+	background: black;
+	color: aliceblue;
+} 
+#reset{
+	background: inherit;
+	border: none;
+	text-decoration: underline;
+	margin-right: 0px;
+}
+.hidden-mobile-menu{
+	display: none;
+}
+#museum-container{
+	box-shadow: none;
+	background-color: inherit;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+.museum{
+	text-align: left;
+	padding: 5px;
+	background-color: ghostwhite;
+	margin: 10px 0px;
+	box-shadow: 1px 1px 2px grey;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+}
+.museum:first-child{
+	margin-top: 0px;
+}
+.museum .name{
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+.museum .name:hover{
+	text-decoration: underline;
+}
+.museum .info img{
+	width: 200px;
+	float: left;
+	margin-right: 15px;
+}
+select{
+	background-color: ghostwhite;
+	font-size: 14px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+#go-top {
+  	position: fixed; 
+  	bottom: 70px; 
+  	right: 70px; 
+  	cursor:pointer; 
+  	display:none;
+  	width: 60px;
+	
+}
+#go-top img{
+	width: 60px;
+	opacity: 0.75;
+}
+
+@media screen and (max-width: 768px)
+{
+	.main{
+		flex-direction: column;
+		padding: 0px;
+		
+	}
+	.left-menu{
+		margin: 0px;
+		width: 100%;
+		box-shadow: none;
+		box-sizing: border-box;
+		padding: 10px;
+
+	}
+	.content{
+		margin: 10px auto;
+	}
+
+	.left-menu #filters{
+		height: 0px;
+		overflow: hidden;
+	}
+	.left-menu #filters *{
+		
+	}
+	.hidden-mobile-menu{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	.hidden-mobile-menu img{
+		height: 30px;
+	}
+	.museum{
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+	.museum .info hr, .about{
+		display: none;
+	}
+	.museum .info img{
+		width: 90%;
+		float: none;
+		margin: 0px;
+	}
+	.museum .name{
+		font-size: 14px;
+	}
+	#go-top {
+  		bottom: 70px; 
+  		right: 30px;
+  		width: 60px;
+	}
+	#go-top img{
+		width: 60px;
+	}
+}
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) /* IE 10+ */
+{
+	#find, #reset {
+		background-color: ghostwhite;
+	}
+}

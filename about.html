@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Liverpool О сайте</title>
+	<link rel="shortcut icon" href="images/lv.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="styles/main.css">
+	<script src="scripts/counter.js"></script>
+	<script src="scripts/check-district.js"></script>
+	<script src="scripts/search.js"></script>
+	
+	
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="header">
+			<a href="index.html">
+				<div class="logo"><img src="images/lvp.png" alt="Логотип сайта"></div>
+				<div class="title">Liverpool FC</div>
+			</a>
+			<div class="menu">
+				<div class="button" id="catalog">
+					<a href="catalog.html" onclick="send(null)">Состав</a>
+					<ul class="districts">
+						<li><a href="catalog.html" onclick="send(0)">Главный тренер</a></li>
+						<li><a href="catalog.html" onclick="send(1)">Вратари</a></li>
+						<li><a href="catalog.html" onclick="send(2)">Защитники</a></li>
+						<li><a href="catalog.html" onclick="send(3)">Полузащитники</a></li>
+						<li><a href="catalog.html" onclick="send(4)">Нападающие</a></li>
+					</ul>
+				</div>
+				<div class="button"><a href="map.html">История</a></div>
+				<div class="button"><a href="about.html">О сайте</a></div>
+			</div>
+			<form class="search" action="catalog.html">
+				<input type="search" name="input1" placeholder="Поиск" class="input" />
+				<button class="submit" onclick="Search()"></button>
+			</form>
+		</div>
+
+		<div class="main">
+			<div class="content">
+				<ul class="bread_crumbs">
+					<li>&rtrif; <a href="index.html">Главная</a></li>
+					<li>&rtrif; О сайте</li>
+				</ul>
+
+				<div class="article">
+					<h2 class="heading">О сайте</h2>
+					<p>Данный сайт разработан в ходе выполнения курсовой работы по дисциплине «Компьютерные языки разметки» на тему: Разработка web-сайта  «Фан сайт футбольного клуба Liverpool».</p>
+					<p>На странице «Состав» приведен список многих игроков клуба.На странице "История" кратко изложена информация о становлении гранда мирового футбола. Информация о футбольном 
+					клубе взята с сайта <a href="https://www.liverpoolfc.com/">liverpoolfc.com</a>,
+						а также с официальных сайтов спортивных газет.</p>
+					<p>Размещенная на сайте информация является актуальной на конец 2020 года.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="counter">
+				<a href="https://metrika.yandex.ru/stat/?id=56252041&amp;from=informer" target="_blank" rel="nofollow">
+					<img src="https://informer.yandex.ru/informer/56252041/3_0_ECECECFF_CCCCCCFF_0_pageviews"
+						 style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" 
+						 class="ym-advanced-informer" data-cid="56252041" data-lang="ru" />
+				</a>
+				<img src="https://mc.yandex.ru/watch/56252041" style="position:absolute; left:-9999px;" alt="" />
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

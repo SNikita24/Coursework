@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="DpURdZQf1ijLNz7MzDjefCMBOhRy7yzAwF2k7EuH8OA" />
+	<title>Фан-Страница Liverpool</title>
+	<link rel="shortcut icon" href="images/lv.jpg" type="image/x-icon">
+	<!--Подключаемые стили-->
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/slick.css">
+	<link rel="stylesheet" href="styles/slick-theme.css">
+	<!--Подключаемые скрипты-->
+	<script src="scripts/jquery-3.4.1.min.js"></script>
+	<script src="scripts/slick.min.js"></script>
+	<script src="scripts/counter.js"></script>
+	<script src="scripts/check-district.js"></script>
+	<script src="scripts/search.js"></script>
+	<!--Скрипт галереи-карусели-->
+	<script>
+    $(document).ready(function(){
+		$('.gallery').slick({
+			slidesToScroll: 1,
+  			autoplay: true,
+  			autoplaySpeed: 3000,
+			speed: 750,
+		});
+    });
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!--Шапка страницы-->
+		<div class="header">
+			<a href="index.html">
+				<div class="logo"><img src="images/lvp.png" alt="Логотип сайта"></div>
+				<div class="title">Liverpool FC</div>
+			</a>
+			<div class="menu"> 
+				<div class="button" id="catalog">
+					<a href="catalog.html" onclick="send(null)">Состав</a>
+					<!--Выпадающее меню районов каталога. При нажатии на соответствующую гиперссылку вызывается функция send(), 
+						принимающая аргументом индекс района в форме фильтров и записывающая его в локальное хранилище 
+						для последующего получения при помощи функции check() в каталоге-->
+					<ul class="districts">
+						<li><a href="catalog.html" onclick="send(0)">Главный тренер</a></li>
+						<li><a href="catalog.html" onclick="send(1)">Вратари</a></li>
+						<li><a href="catalog.html" onclick="send(2)">Защитники</a></li>
+						<li><a href="catalog.html" onclick="send(3)">Полузащитники</a></li>
+						<li><a href="catalog.html" onclick="send(4)">Нападающие</a></li>
+					</ul>
+				</div>
+				<div class="button"><a href="map.html">История</a></div>
+				<div class="button"><a href="about.html">О сайте</a></div>
+			</div>
+			<!--Форма для поиска-->
+			<form class="search" action="catalog.html">
+				<input type="search" name="input1" placeholder="Поиск" class="input" />
+				<button class="submit" onclick="Search()"></button>
+			</form>
+		</div>
+		<!--Основной блок-->
+		<div class="main">
+			<div class="content">
+				<!--Хлебные крошки-->
+				<ul class="bread_crumbs">
+					<li>&rtrif; Главная </li>
+				</ul>
+				<!--Основная информация на странице-->
+				<div class="article">
+					<h2 class="heading">Главная страница</h2>
+					<!--Галерея-->
+					<div class="gallery">
+						<div class="image">
+							<a href="map.html">
+								<img src="images/history.jpg" title="История клуба"/>
+							</a>
+						</div>
+						<div class="image">
+							<a href="catalog.html">
+								<img src="images/line_up.jpg" title="Состав" />
+							</a>
+						</div>
+						<div class="image">
+							<a href="https://www.nike.com/ru/">
+								<img src="images/form.jpeg"  title="Футбольная атрибутика"/>
+							</a>
+						</div>
+					</div>
+					<p>«Ливерпуль» (полное название — Футбольный клуб «Ливерпуль», англ. Liverpool City Football Club) — английский профессиональный футбольный 
+					клуб из одноимённого города, расположенного в графстве Мерсисайд. Был основан в 1892 году; в следующем году вступил в Футбольную лигу Англии.
+					С момента своего создания проводит домашние игры на стадионе «Энфилд». Стадион был построен в 1884 году, на нём изначально играл другой 
+					ливерпульский футбольный клуб, «Эвертон». В настоящий момент «Энфилд» вмещает порядка пятидесяти четырёх тысяч болельщиков.</p>
+					<p>«Ливерпуль» является 19-кратным чемпионом Англии, 7-кратным обладателем Кубка Англии, 8-кратным обладателем Кубка лиги, 15-кратным обладателем
+					Суперкубка Англии, 3-кратным обладателем Кубка УЕФА, 6-кратным победителем Лиги чемпионов, 4-кратным обладателем Суперкубка УЕФА. В общей сложности
+					«Ливерпуль» выигрывал еврокубки тринадцать раз, что является четвёртым результатом после мадридского «Реала», «Милана» и «Барселоны». Самый успешный
+					период в истории клуба приходится на 1970-е и 1980-е годы, когда командой руководили Билл Шенкли и Боб Пейсли, которые совместно на двоих выиграли
+					11 чемпионских титулов и 7 европейских трофеев.</p>
+					<p>Принципиальными соперниками с давних лет являются английские команды «Эвертон» и «Манчестер Юнайтед», с которыми разыгрываются мерсисайдское и
+					северо-западное дерби соответственно. Гимном клуба является песня You’ll Never Walk Alone, перепетая в дальнейшем ливерпульской группой 
+					Gerry & The Pacemakers[10].</p>
+					<p>По данным Forbes на 2018 год, «Ливерпуль» занимал восьмое место в списке самых дорогих футбольных клубов мира и оценивался в сумму 1,944 млрд 
+					долларов США[11]. По данным аудиторской компании Deloitte, по итогам сезона 2016/17 «Ливерпуль» занимал 9-ю строчку в рейтинге футбольных клубов
+					с ежегодным доходом в размере 424,2 млн евро[12].</p>
+					<p>На сайте вы можете найти актуальную информацию о составе, историю гранда мирового футбола, а так же расположение магазинов футбольной атрибутики.</p>
+				</div>
+			</div>
+		</div>
+		<!--Подвал-->
+		<div class="footer">
+			<!--Счетчик Яндекс.Метрика-->
+			<div class="counter">
+				<a href="https://metrika.yandex.ru/stat/?id=56252041&amp;from=informer" target="_blank" rel="nofollow">
+					<img src="https://informer.yandex.ru/informer/56252041/3_0_ECECECFF_CCCCCCFF_0_pageviews"
+						 style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+						 class="ym-advanced-informer" data-cid="56252041" data-lang="ru" />
+				</a>
+				<img src="https://mc.yandex.ru/watch/56252041" style="position:absolute; left:-9999px;" alt="" />
+			</div>
+			<!--Таблица информации о студенте-->
+			<table id="author">
+				<tr>
+					<td>ФИО</td>
+					<td>Факультет</td>
+					<td>Специальность</td>
+					<td>Группа</td>
+					<td>Год</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			<!--Скрипт-парсер информации о студенте из файла student.xml-->
+			<script>
+				var xmlhttp;
+				if (window.XMLHttpRequest)
+				{ // для IE7+, Firefox, Chrome, Opera, Safari
+					xmlhttp = new XMLHttpRequest();
+				}
+				else
+				{ // для IE6, IE5
+					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+
+				xmlhttp.open("GET","https://raw.githubusercontent.com/Vladislav2147/Vladislav2147.github.io/master/student.xml",false);
+				xmlhttp.overrideMimeType('application/xml');
+				xmlhttp.send();
+				var xmlDoc = xmlhttp.responseText;
+				var parser = new DOMParser();
+				var doc = parser.parseFromString(xmlDoc, "application/xml");
+				var string = document.getElementById("author").getElementsByTagName("tr")[1].getElementsByTagName("td");
+				for (let i = 0; i < string.length; i++) {
+					string[i].innerHTML = doc.getElementsByTagName("student")[0].childNodes[2 * i + 1].textContent;
+				}
+			</script>
+		</div>
+	</div>
+</body>
+
+</html>

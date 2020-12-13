@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Liverpool Состав</title>
+	<link rel="shortcut icon" href="images/lv.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/catalog.css">
+	<script src="scripts/counter.js"></script>
+	<script src="scripts/mobile-filters.js"></script>
+	<script src="scripts/check-district.js"></script>
+	<script src="scripts/catalog.js" defer></script>
+	<script src="scripts/search.js"></script>
+	<script src="scripts/jquery-3.4.1.min.js"></script>
+	<!--Скрипт якоря на начало страницы-->
+	<script>
+	$(document).ready(function(){
+  		$('body').append('<a href="#" id="go-top" title="Вверх"><img src="images/up.svg"/></a>');
+	});
+	$(function() {
+ 		$.fn.scrollToTop = function() {
+  		$(this).hide().removeAttr("href");
+  		if ($(window).scrollTop() >= "250") 
+			$(this).fadeIn("slow")
+  		var scrollDiv = $(this);
+  		$(window).scroll(function() {
+   			if ($(window).scrollTop() <= "250") 
+				$(scrollDiv).fadeOut("slow")
+   			else 
+				$(scrollDiv).fadeIn("slow")
+  		});
+  		$(this).click(function() {
+   			$("html, body").animate({scrollTop: 0}, "slow")
+  		})
+ 	}
+	});
+
+	$(function() {
+ 		$("#go-top").scrollToTop();
+	});
+	</script>
+</head>
+<!--Когда страница загружена, запускаем функцию check(), которая получает индекс района из локального хранилища, 
+	и, если таковой имеется, устанавливает соответсвующий checkbox в состояние "выбрано"-->
+<body onload="check()">
+	<div class="wrapper">
+
+		<div class="header"> 
+			<a href="index.html">
+				<div class="logo"><img src="images/lvp.png" alt="Логотип сайта"></div>
+				<div class="title">Liverpool FC</div>
+			</a>
+			<div class="menu">
+				<div class="button" id="catalog">
+					<a href="catalog.html" onclick="send(null)">Состав</a>
+					<ul class="districts">
+						<li><a href="catalog.html" onclick="send(0)">Главный тренер</a></li>
+						<li><a href="catalog.html" onclick="send(1)">Вратари</a></li>
+						<li><a href="catalog.html" onclick="send(2)">Защитники</a></li>
+						<li><a href="catalog.html" onclick="send(3)">Полузащитники</a></li>
+						<li><a href="catalog.html" onclick="send(4)">Нападающие</a></li>
+					</ul>
+				</div>
+				<div class="button"><a href="map.html">История</a></div>
+				<div class="button"><a href="about.html">О сайте</a></div>
+			</div>
+			<form class="search" action="catalog.html">
+				<input type="search" name="input1" placeholder="Поиск" class="input" />
+				<button class="submit" onclick="Search()"></button>
+			</form>
+		</div>
+
+		<div class="main">
+			<div class="left-menu">
+				<!--Заголовок меню "фильтры" для мобильных устройств-->
+				<div class="hidden-mobile-menu" onclick="Fall()">
+					<span>Фильтры</span>
+					<img src="images/filter.svg" alt="Выпадающее меню"/>
+				</div>
+				<!--Форма фильтров музеев-->
+				<form id="filters" name="filters">
+					<b>ПОЗИЦИИ</b><hr>
+					<label class="container">
+						<input type="checkbox" name="location" value="Главный тренер">
+						<span class="checkmark"></span>
+						Главный тренер
+					</label>
+					<label class="container">
+						<input type="checkbox" name="location" value="Вратари">
+						<span class="checkmark"></span>
+						Вратарь
+					</label>
+					<label class="container">
+						<input type="checkbox" name="location" value="Защитники">
+						<span class="checkmark"></span>
+						Защитник
+					</label>
+					<label class="container">
+						<input type="checkbox" name="location" value="Полузащитники">
+						<span class="checkmark"></span>
+						Полузащитник
+					</label>
+					<label class="container">
+						<input type="checkbox" name="location" value="Нападающие">
+						<span class="checkmark"></span>
+						Нападающий
+					</label>
+					<b>СОСТОЯНИЕ</b><hr>
+					<label class="container">
+						<input type="checkbox" name="subject" value="Музей искусства">
+						<span class="checkmark"></span>
+						Здоров
+					</label>
+					<label class="container">
+						<input type="checkbox" name="subject" value="Музей истории">
+						<span class="checkmark"></span>
+						Травмирован
+					</label>
+					<label class="container">
+						<input type="checkbox" name="subject" value="Другое">
+						<span class="checkmark"></span>
+						Другое
+					</label>
+					<b>Сортировка</b><hr>
+					<select>
+						<option>Нет</option>
+						<option>По алфавиту</option>
+						<option>По стоимости</option>
+					</select>
+					<div id="buttons">
+						<input type="button" id="find" value="Подобрать" onclick="Filters()">
+						<input type="button" id="reset" value="Сбросить" onclick="Reset()">
+						
+					</div>
+					
+				</form>
+			</div>
+			<div class="content">
+				<ul class="bread_crumbs">
+					<li>&rtrif; <a href="index.html">Главная</a></li>
+					<li>&rtrif; Каталог</li>
+				</ul>
+				<!--Основной блок, в котором будут располагаться блоки музеев-->
+				<div id="museum-container">
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="counter">
+				<a href="https://metrika.yandex.ru/stat/?id=56252041&amp;from=informer" target="_blank" rel="nofollow">
+					<img src="https://informer.yandex.ru/informer/56252041/3_0_ECECECFF_CCCCCCFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" 
+						 title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="56252041" data-lang="ru" />
+				</a>
+				<img src="https://mc.yandex.ru/watch/56252041" style="position:absolute; left:-9999px;" alt="" />
+			</div>
+		</div>
+	</div>
+		
+</body>
+
+</html>
