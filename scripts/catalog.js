@@ -8,7 +8,7 @@ function Museum(title, picture, info, district, tag, cost) {
 	this.district = district;
 	this.tag = tag;
 	this.cost = cost;
-	var firstSpace = 270;
+	var firstSpace = 290;
 	for (let i = 270; i > 250; i--) {
 		if(info[i] == ' ') {
 			firstSpace = i;
