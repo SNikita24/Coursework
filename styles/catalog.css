@@ -109,14 +109,14 @@
 .hidden-mobile-menu{
 	display: none;
 }
-#museum-container{
+#player-container{
 	box-shadow: none;
 	background-color: inherit;
 	padding: 0px;
 	margin: 0px;
 	text-align: center;
 }
-.museum{
+.player{
 	text-align: left;
 	padding: 5px;
 	background-color: ghostwhite;
@@ -126,20 +126,20 @@
 	display: flex;
 	flex-direction: column;
 }
-.museum:first-child{
+.player:first-child{
 	margin-top: 0px;
 }
-.museum .name{
+.player .name{
 	font-size: 20px;
 	font-weight: bold;
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
 }
-.museum .name:hover{
+.player .name:hover{
 	text-decoration: underline;
 }
-.museum .info img{
+.player .info img{
 	width: 200px;
 	float: left;
 	margin-right: 15px;
@@ -200,19 +200,19 @@ select{
 	.hidden-mobile-menu img{
 		height: 30px;
 	}
-	.museum{
+	.player{
 		flex-direction: column-reverse;
 		text-align: center;
 	}
-	.museum .info hr, .about{
+	.player .info hr, .about{
 		display: none;
 	}
-	.museum .info img{
+	.player .info img{
 		width: 90%;
 		float: none;
 		margin: 0px;
 	}
-	.museum .name{
+	.player .name{
 		font-size: 14px;
 	}
 	#go-top {

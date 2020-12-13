@@ -1,8 +1,8 @@
 'use strict';
 
-//Класс музей
+//Класс игрок
 
-function Museum(title, picture, info, district, tag, cost) {
+function Player(title, picture, info, district, tag, cost) {
 	this.title = title;
 	this.picture = picture;
 	this.district = district;
@@ -18,7 +18,7 @@ function Museum(title, picture, info, district, tag, cost) {
 	this.info = info.slice(0, firstSpace) + "...";
 }
 
-//Функция, получающая из локального хранилища индекс района и устанавливающая соответствующий району checkbox в состояние "выбрано"
+//Функция, получающая из локального хранилища индекс позиции и устанавливающая соответствующий району checkbox в состояние "выбрано"
 
 function check() {
 	var districts = document.getElementById("filters");
@@ -28,9 +28,9 @@ function check() {
 	}
 }
 
-//Парсер музеев из Xml через XMLHttpRequest
+//Парсер игроков из Xml через XMLHttpRequest
 
-function MuseumParser() {
+function PlayerParser() {
 	var xmlhttp;
 	if (window.XMLHttpRequest)
 	{ // для IE7+, Firefox, Chrome, Opera, Safari
@@ -41,7 +41,7 @@ function MuseumParser() {
 		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 	}
 
-	xmlhttp.open("GET","https://raw.githubusercontent.com/SNikita24/Coursework/main/museums.xml",false);
+	xmlhttp.open("GET","https://raw.githubusercontent.com/SNikita24/Coursework/main/players.xml",false);
 	xmlhttp.overrideMimeType('application/xml');
 	xmlhttp.send();
 	var xmlDoc = xmlhttp.responseText;
@@ -50,16 +50,16 @@ function MuseumParser() {
 	return parser.parseFromString(xmlDoc, "application/xml");
 }
 
-//Функция вывода экземпляра класса "Музей" на страницу
+//Функция вывода экземпляра класса "Player" на страницу
 
-function ToBlock(museum) {
+function ToBlock(player) {
 	var main = document.createElement("div");
-	main.setAttribute("class", "museum");
+	main.setAttribute("class", "player");
 			
 	var refTitle = document.createElement("a");
-	refTitle.innerHTML = museum.title;
+	refTitle.innerHTML = player.title;
 	refTitle.setAttribute("class", "name");
-	refTitle.setAttribute("href", "museum.html");
+	refTitle.setAttribute("href", "player.html");
 	refTitle.setAttribute("target", "_blank");
 	
 	//При нажатии на ссылку записываем ее текст в локальное хранилище
@@ -75,13 +75,13 @@ function ToBlock(museum) {
 	var hr = document.createElement("hr");
 			
 	var img = document.createElement("img");
-	img.setAttribute("src", "images/" + museum.picture);
-	img.setAttribute("alt", museum.picture);
-	img.setAttribute("title", museum.title);
+	img.setAttribute("src", "images/" + player.picture);
+	img.setAttribute("alt", player.picture);
+	img.setAttribute("title", player.title);
 			
 	var span = document.createElement("span");
 	span.setAttribute("class", "about");
-	span.innerHTML = museum.info;
+	span.innerHTML = player.info;
 			
 	divInfo.appendChild(hr);
 	divInfo.appendChild(img);
@@ -90,15 +90,15 @@ function ToBlock(museum) {
 	main.appendChild(refTitle);
 	main.appendChild(divInfo);
 			
-	document.getElementById("museum-container").appendChild(main);
+	document.getElementById("player-container").appendChild(main);
 }
 
 //Сброс формы и поискового запроса
 
 function Reset() {
 	localStorage.removeItem("whatToSearch");
-	if (searchedMuseumsByName != null) {
-		searchedMuseumsByName.length = 0;
+	if (searchedPlayersByName != null) {
+		searchedPlayersByName.length = 0;
 	}
 	
 	for (let i = 0; i < document.getElementsByName("location").length; i++) {
@@ -119,7 +119,7 @@ function Reset() {
 //Фильтрация массива музеев по параметрам из формы
 
 function Filters() {
-	var searchedMuseums = new Array();
+	var searchedPlayers = new Array();
 	var namesOfDistricts = new Array();
 	var districts = document.getElementsByName("location");
 	
@@ -144,17 +144,17 @@ function Filters() {
 	
 	//Если есть непустой массив, отфильтрованный по поиску, работаем с ним
 	
-	if (searchedMuseumsByName != null && searchedMuseumsByName.length != 0) {
-		var searchedMuseums = searchedMuseumsByName.slice();
+	if (searchedPlayersByName != null && searchedPlayersByName.length != 0) {
+		var searchedPlayers = searchedPlayersByName.slice();
 	}
 	else {
-		var searchedMuseums = museums.slice();
+		var searchedPlayers = players.slice();
 	}	
 	
 	//Если элемент соответствует хотя бы одному параметру, добавляем в отфильтрованный массив
 	
 	if (namesOfDistricts.length != 0) {
-	   searchedMuseums = searchedMuseums.filter(function(item) {
+	   searchedPlayers = searchedPlayers.filter(function(item) {
 			for (let i = 0; i < namesOfDistricts.length; i++) {
 				if (item.district == namesOfDistricts[i]) {
 					return true;
@@ -166,7 +166,7 @@ function Filters() {
 	}
 	
 	if(namesOfSubjects.length != 0){
-		searchedMuseums = searchedMuseums.filter(function(item) {
+		searchedPlayers = searchedPlayers.filter(function(item) {
 			for (let i = 0; i < namesOfSubjects.length; i++) {
 				if (item.tag == namesOfSubjects[i]) {
 					return true;
@@ -177,11 +177,11 @@ function Filters() {
 	}
 	
 	
-	//Сортировка музеев по заданному в select параметру
+	//Сортировка игроков по заданному в select параметру
 	
 	switch (document.getElementsByTagName("select")[0].selectedIndex) {
 		case 0: break;
-		case 1: searchedMuseums.sort(function(a, b) {
+		case 1: searchedPlayers.sort(function(a, b) {
 			if (a.title < b.title) {
     			return -1;
   			}
@@ -191,48 +191,48 @@ function Filters() {
   			return 0;
 		});
 			break;
-		case 2: searchedMuseums.sort(function(a, b) {
+		case 2: searchedPlayers.sort(function(a, b) {
 			return a.cost - b.cost;
 		});
 			break;
 		default: break;
 	}
 	
-	document.getElementById("museum-container").innerHTML = "";
+	document.getElementById("player-container").innerHTML = "";
 	
-	if (searchedMuseums.length == 0) {
-		document.getElementById("museum-container").innerHTML = "Ничего не найдено!";
+	if (searchedPlayers.length == 0) {
+		document.getElementById("player-container").innerHTML = "Ничего не найдено!";
 	}
 	else {
-		for (let i = 0; i < searchedMuseums.length; i++) {
-			ToBlock(searchedMuseums[i]);
+		for (let i = 0; i < searchedPlayers.length; i++) {
+			ToBlock(searchedPlayers[i]);
 		}
 	}
 	
 	
 }
 
-var doc = MuseumParser();
-var museums = [];
+var doc = PlayerParser();
+var players = [];
 
-//Инициализация массива экземпляров муззеев, получая поля для конструктора из XmlDOM
+//Инициализация массива экземпляров игроков, получая поля для конструктора из XmlDOM
 
-for (let i = 0; i < doc.getElementsByTagName("museum").length; i++) {
-	museums[i] = new Museum(doc.getElementsByTagName("museum")[i].getElementsByTagName("title")[0].textContent,
-							doc.getElementsByTagName("museum")[i].getElementsByTagName("picture")[0].textContent,
-							doc.getElementsByTagName("museum")[i].getElementsByTagName("info")[0].textContent,
-							doc.getElementsByTagName("museum")[i].getElementsByTagName("district")[0].textContent,
-							doc.getElementsByTagName("museum")[i].getElementsByTagName("subjects")[0].textContent,
-							doc.getElementsByTagName("museum")[i].getElementsByTagName("cost")[0].textContent
+for (let i = 0; i < doc.getElementsByTagName("player").length; i++) {
+	players[i] = new Player(doc.getElementsByTagName("player")[i].getElementsByTagName("title")[0].textContent,
+							doc.getElementsByTagName("player")[i].getElementsByTagName("picture")[0].textContent,
+							doc.getElementsByTagName("player")[i].getElementsByTagName("info")[0].textContent,
+							doc.getElementsByTagName("player")[i].getElementsByTagName("district")[0].textContent,
+							doc.getElementsByTagName("player")[i].getElementsByTagName("subjects")[0].textContent,
+							doc.getElementsByTagName("player")[i].getElementsByTagName("cost")[0].textContent
 							);
 }
 
 var searchRequest = localStorage.getItem("whatToSearch");
 
-//Если передан поисковый запрос, ищем вхождение запроса в названия музеев
+//Если передан поисковый запрос, ищем вхождение запроса в игроков
 
 if(searchRequest != null && searchRequest.length != 0){
-	var searchedMuseumsByName = museums.filter(function(item){
+	var searchedPlayersByName = players.filter(function(item){
 		var name = item.title.toLowerCase();
 		var search = searchRequest.toLowerCase();
 		//Объявление для IE (не поддерживает метод includes())
@@ -256,18 +256,18 @@ if(searchRequest != null && searchRequest.length != 0){
 		return false;
 	});
 	localStorage.removeItem("whatToSearch");
-	if(searchedMuseumsByName.length == 0){
-		document.getElementById("museum-container").innerHTML = "Ничего не найдено!";
+	if(searchedPlayersByName.length == 0){
+		document.getElementById("player-container").innerHTML = "Ничего не найдено!";
 	}
 	else{
-		for (var i = 0; i < searchedMuseumsByName.length; i++) {
-			ToBlock(searchedMuseumsByName[i]);
+		for (var i = 0; i < searchedPlayersByName.length; i++) {
+			ToBlock(searchedPlayersByName[i]);
 		}
 	}
 }
 else {
-	for (var i = 0; i < museums.length; i++) {
-		ToBlock(museums[i]);
+	for (var i = 0; i < players.length; i++) {
+		ToBlock(players[i]);
 	}
 }
 
