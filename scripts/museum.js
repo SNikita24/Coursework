@@ -13,7 +13,7 @@ function MuseumParser() {
 		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 	}
 
-	xmlhttp.open("GET","https://raw.githubusercontent.com/Vladislav2147/Vladislav2147.github.io/master/museums.xml",false);
+	xmlhttp.open("GET","https://raw.githubusercontent.com/SNikita24/Coursework/main/museums.xml",false);
 	xmlhttp.overrideMimeType('application/xml');
 	xmlhttp.send();
 	var xmlDoc = xmlhttp.responseText;

@@ -9,7 +9,7 @@ function Museum(title, picture, info, district, tag, cost) {
 	this.tag = tag;
 	this.cost = cost;
 	var firstSpace = 290;
-	for (let i = 270; i > 250; i--) {
+	for (let i = 290; i > 250; i--) {
 		if(info[i] == ' ') {
 			firstSpace = i;
 			break;
@@ -107,10 +107,10 @@ function Reset() {
 	for (let i = 0; i < document.getElementsByName("subject").length; i++) {
 		document.getElementsByName("subject")[i].checked = false;
 	}
-	/*
-	document.getElementsByName("location").forEach(district => district.checked = false);
-	document.getElementsByName("subject").forEach(subject => subject.checked = false);
-	*/
+	
+	//document.getElementsByName("location").forEach(district => district.checked = false);
+	//document.getElementsByName("subject").forEach(subject => subject.checked = false);
+	
 	document.getElementsByName("cost")[0].checked = false;
 	
 	Filters();
@@ -176,13 +176,6 @@ function Filters() {
 		});
 	}
 	
-	if (IsFree) {
-		searchedMuseums = searchedMuseums.filter(function(item) {
-			if (item.cost == 0) {
-				return true;
-			}
-		});
-	}
 	
 	//Сортировка музеев по заданному в select параметру
 	
