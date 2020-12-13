@@ -29,7 +29,7 @@
 		<time>28 </time>
 		<address>ул. Ленина, 20</address>
 		<email>nmmrb@bk.ru</email>
-		<cost>90 млн</cost>
+		<cost>80 млн.$</cost>
 		<number>1</number>
 	</player>
 	<player>
@@ -46,7 +46,7 @@
 		<time>27</time>
 		<address>пр-т. Победителей 8</address>
 		<email>museumww2@tut.by</email>
-		<cost>9.0</cost>
+		<cost>60 млн.$</cost>
 		<number>3</number>
 	</player>
 	<player>
@@ -68,7 +68,7 @@
 		<time>29</time>
 		<address>ул. К.Маркса,12</address>
 		<email>histmuseum@tut.by</email>
-		<cost>20.0</cost>
+		<cost>80 млн.$</cost>
 		<number>4</number>
 	</player>
 	<player>
@@ -88,7 +88,7 @@
 		<time>30</time>
 		<address>площадь Свободы, 15</address>
 		<email>muzejminska@gmail.com</email>
-		<cost>4.0</cost>
+		<cost>40 млн.$</cost>
 		<number>5</number>
 	</player>
 	<player>
@@ -110,7 +110,7 @@
 		<time>34</time>
 		<address>ул. Некрасова, 3</address>
 		<email>artmoderncenter@gmail.com</email>
-		<cost>5.0</cost>
+		<cost>5 млн.$</cost>
 		<number>7</number>
 	</player>
 	<player>
@@ -128,7 +128,7 @@
 		<time>26</time>
 		<address>ул. З.Азгура, 8</address>
 		<email>museum.azgur@mail.ru</email>
-		<cost>5.0</cost>
+		<cost>40 млн.$</cost>
 		<number>8</number>
 	</player>
 	<player>
@@ -144,7 +144,7 @@
 		<time>29</time>
 		<address>пр-т Независимости, 25</address>
 		<email>info@belarusmini.by</email>
-		<cost></cost>
+		<cost>72 млн.$</cost>
 		<number>9</number>
 	</player>
 	<player>
@@ -163,7 +163,7 @@
 		<time>28</time>
 		<address>ул. М. Богдановича, 13</address>
 		<email>bellitmuseum@tut.by</email>
-		<cost>6.0</cost>
+		<cost>120 млн.$</cost>
 		<number>10</number>
 	</player>
 	<player>
@@ -183,7 +183,7 @@
 		<time>28</time>
 		<address>ул. Академическая, 5</address>
 		<email>muzeykolas@yandex.ru</email>
-		<cost>5.0</cost>
+		<cost>120 млн.$</cost>
 		<number>11</number>
 	</player>
 	<player>
@@ -199,7 +199,7 @@
 		<time>23</time>
 		<address>ул. Янки Купалы, 4</address>
 		<email>kupalamuseum@mail.ru</email>
-		<cost>6.0</cost>
+		<cost>40 млн.$</cost>
 		<number>12</number>
 	</player>
 	<player>
@@ -215,7 +215,7 @@
 		<time>33</time>
 		<address>проезд Чижевских 8-2, 10</address>
 		<email>loshytsa@gmail.com</email>
-		<cost>8.0</cost>
+		<cost>4 млн.$</cost>
 		<number>13</number>
 	</player>
 	<player>
@@ -232,7 +232,7 @@
 		<time>30</time>
 		<address>просп. Независимости, 116</address>
 		<email>inbox@nlb.by</email>
-		<cost>1.0</cost>
+		<cost>28 млн.$</cost>
 		<number>14</number>
 	</player>
 	<player>
@@ -248,7 +248,7 @@
 		<time>Круглосуточно</time>
 		<address>аллея Валунов</address>
 		<email>Отсутствует</email>
-		<cost>0.0</cost>
+		<cost>24 млн.$</cost>
 		<number>15</number>
 	</player>
 	<player>
@@ -267,7 +267,7 @@
 		<time>17</time>
 		<address>ул. Фабрициуса, 28</address>
 		<email>Отсутствует</email>
-		<cost>2.0</cost>
+		<cost>10 млн.$</cost>
 		<number>19</number>
 	</player>
 	<player>
@@ -283,7 +283,7 @@
 		<time>25</time>
 		<address>Ул. Кальварийская, 37</address>
 		<email>office@beldorstroy.by</email>
-		<cost>3.60</cost>
+		<cost>10 млн.$</cost>
 		<number>18</number>
 	</player>
 	<player>
@@ -300,7 +300,7 @@
 		<time>24</time>
 		<address>ул. Чкалова, 38</address>
 		<email>Отсутствует</email>
-		<cost>5.0</cost>
+		<cost>9 млн.$</cost>
 		<number>21</number>
 	</player>
 	<player>
@@ -318,7 +318,7 @@
 		<time>29</time>
 		<address>ул. Долгобродская 35</address>
 		<email>museum@belarus-tractor.com</email>
-		<cost>1.7</cost>
+		<cost>16 млн.$</cost>
 		<number>23</number>
 	</player>
 	<player>
@@ -335,7 +335,7 @@
 		<time>27</time>
 		<address>ст.м. Могилевская</address>
 		<email>mail@metropoliten.by</email>
-		<cost>0.0</cost>
+		<cost>75 млн.$</cost>
 		<number>26</number>
 	</player>
 	<player>
@@ -354,7 +354,7 @@
 		<time>27</time>
 		<address>ст.м. Могилевская</address>
 		<email>mail@metropoliten.by</email>
-		<cost>0.0</cost>
+		<cost>16 млн.$</cost>
 		<number>27</number>		
 	</player>
 	<player>
@@ -366,11 +366,11 @@
 		</info>
 		<picture>matip.jpg</picture>
 		<district>Защитник</district>
-		<subjects>Травмирован</subjects>
+		<subjects>Здоров</subjects>
 		<time>29</time>
 		<address>ст.м. Могилевская</address>
 		<email>mail@metropoliten.by</email>
-		<cost>0.0</cost>
+		<cost>32 млн.$</cost>
 		<number>32</number>	
 	</player>
 	<player>
@@ -384,7 +384,7 @@
 		<time>22</time>
 		<address>ст.м. Могилевская</address>
 		<email>mail@metropoliten.by</email>
-		<cost>0.0</cost>
+		<cost>1 млн.$</cost>
 		<number>62</number>	
 	</player>
 	<player>
@@ -399,13 +399,12 @@
 		<time>22</time>
 		<address>ст.м. Могилевская</address>
 		<email>mail@metropoliten.by</email>
-		<cost>0.0</cost>
+		<cost>110 млн.$</cost>
 		<number>66</number>	
 	</player>
 	<player>
 		<title>Клопп</title>
-		<info>Ю́рген Но́рберт Клопп (нем. Jürgen Norbert Klopp; родился 16 июня 1967, Штутгарт, ФРГ) — немецкий футболист и футбольный тренер. Главный тренер английского клуба «Ливерпуль». В 2019 году «Ливерпуль» под его руководством стал победителем Лиги Чемпионов, Суперкубка УЕФА, Клубного чемпионата мира, а в 2020 году Английской Премьер Лиги.
-Получил признание во время работы в футбольном клубе «Майнц 05», где играл с 1990 по 2001 год и вслед за этим тренировал команду с 2001 по 2008 год. В 2008—2015 годах тренировал команду первой немецкой Бундеслиги «Боруссия» (Дортмунд), с которой стал двукратным чемпионом Германии (2010/11, 2011/12), двукратным обладателем Суперкубка Германии (2013, 2014), обладателем Кубка Германии (2011/12) и финалистом Лиги чемпионов (2012/13). В октябре 2015 Клопп стал тренером английского «Ливерпуля», с которым вышел в финалы Кубка лиги, Лиги Европы и Лиги чемпионов, но ни в одном из них не победил до 2019 года.      
+		<info>Ю́рген Но́рберт Клопп (нем. Jürgen Norbert Klopp; родился 16 июня 1967, Штутгарт, ФРГ) — немецкий футболист и футбольный тренер. Главный тренер английского клуба «Ливерпуль». В 2019 году «Ливерпуль» под его руководством стал победителем Лиги Чемпионов, Суперкубка УЕФА, Клубного чемпионата мира, а в 2020 году Английской Премьер Лиги. Получил признание во время работы в футбольном клубе «Майнц 05», где играл с 1990 по 2001 год и вслед за этим тренировал команду с 2001 по 2008 год. В 2008—2015 годах тренировал команду первой немецкой Бундеслиги «Боруссия» (Дортмунд), с которой стал двукратным чемпионом Германии (2010/11, 2011/12), двукратным обладателем Суперкубка Германии (2013, 2014), обладателем Кубка Германии (2011/12) и финалистом Лиги чемпионов (2012/13). В октябре 2015 Клопп стал тренером английского «Ливерпуля», с которым вышел в финалы Кубка лиги, Лиги Европы и Лиги чемпионов, но ни в одном из них не победил до 2019 года.      
         </info>
 		<picture>klopp.jpg</picture>
 		<district>Главный тренер</district>
