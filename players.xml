@@ -2,14 +2,14 @@
 <!--Xml-документ, хранящий информацию о игроках, размещенных на сайте-->
 <!DOCTYPE players [
 <!ELEMENT players (player*)>
-<!ELEMENT player (title, info, picture+, district, subjects, time, address, email, cost, number)>
+<!ELEMENT player (title, info, picture+, district, subjects, time, home, email, cost, number)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT info (#PCDATA)>
 <!ELEMENT picture (#PCDATA)>
 <!ELEMENT district (#PCDATA)>
 <!ELEMENT subjects (#PCDATA)>
 <!ELEMENT time (#PCDATA)>
-<!ELEMENT address (#PCDATA)>
+<!ELEMENT home (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT cost (#PCDATA)>
 <!ELEMENT number (#PCDATA)>
@@ -27,7 +27,7 @@
 		<district>Вратарь</district>
 		<subjects>Травмирован</subjects>
 		<time>28 </time>
-		<address>Бразилия</address>
+		<home>Бразилия</home>
 		<email>https://www.instagram.com/alissonbecker/</email>
 		<cost>80.0</cost>
 		<number>1</number>
@@ -44,7 +44,7 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>27</time>
-		<address>Бразилия</address>
+		<home>Бразилия</home>
 		<email>---</email>
 		<cost>60.0</cost>
 		<number>3</number>
@@ -66,7 +66,7 @@
 		<district>Защитник</district>
 		<subjects>Травмирован</subjects>
 		<time>29</time>
-		<address>Нидерланды</address>
+		<home>Нидерланды</home>
 		<email>https://www.instagram.com/virgilvandijk/</email>
 		<cost>80.0</cost>
 		<number>4</number>
@@ -86,7 +86,7 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>30</time>
-		<address>Нидерланды</address>
+		<home>Нидерланды</home>
 		<email>https://www.instagram.com/gwijnaldum/</email>
 		<cost>40.0</cost>
 		<number>5</number>
@@ -108,7 +108,7 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>34</time>
-		<address>Англия</address>
+		<home>Англия</home>
 		<email>https://www.instagram.com/jamesmilnerofficial/</email>
 		<cost>5.0</cost>
 		<number>7</number>
@@ -126,7 +126,7 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>26</time>
-		<address>Гвинея</address>
+		<home>Гвинея</home>
 		<email>https://www.instagram.com/keitanabydeco/</email>
 		<cost>40.0</cost>
 		<number>8</number>
@@ -142,7 +142,7 @@
 		<district>Нападающий</district>
 		<subjects>Здоров</subjects>
 		<time>29</time>
-		<address>Бразилия</address>
+		<home>Бразилия</home>
 		<email>https://www.instagram.com/roberto_firmino/</email>
 		<cost>72.0</cost>
 		<number>9</number>
@@ -161,7 +161,7 @@
 		<district>Нападающий</district>
 		<subjects>Здоров</subjects>
 		<time>28</time>
-		<address>Сенегал</address>
+		<home>Сенегал</home>
 		<email>https://www.instagram.com/sadiomaneofficiel/</email>
 		<cost>120.0</cost>
 		<number>10</number>
@@ -181,7 +181,7 @@
 		<district>Нападающий</district>
 		<subjects>Здоров</subjects>
 		<time>28</time>
-		<address>Египет</address>
+		<home>Египет</home>
 		<email>https://www.instagram.com/roberto_firmino/</email>
 		<cost>120.0</cost>
 		<number>11</number>
@@ -197,7 +197,7 @@
 		<district>Защитник</district>
 		<subjects>Здоров</subjects>
 		<time>23</time>
-		<address>Англия</address>
+		<home>Англия</home>
 		<email>https://www.instagram.com/joegomez5/</email>
 		<cost>40.0</cost>
 		<number>12</number>
@@ -213,7 +213,7 @@
 		<district>Вратарь</district>
 		<subjects>Здоров</subjects>
 		<time>33</time>
-		<address>Испания</address>
+		<home>Испания</home>
 		<email>https://www.instagram.com/adr13nsanmiguel/</email>
 		<cost>4.5</cost>
 		<number>13</number>
@@ -230,7 +230,7 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>30</time>
-		<address>Англия</address>
+		<home>Англия</home>
 		<email>https://www.instagram.com/jhenderson/</email>
 		<cost>28.7</cost>
 		<number>14</number>
@@ -246,8 +246,8 @@
 		<district>Полузащитник</district>
 		<subjects>Травмирован</subjects>
 		<time>27</time>
-		<address>Англия</address>
-		<email>alexoxchamberlain</email>
+		<home>Англия</home>
+		<email>https://www.instagram.com/alexoxchamberlain/</email>
 		<cost>24.0</cost>
 		<number>15</number>
 	</player>
@@ -264,11 +264,11 @@
 		<picture>jones.jpeg</picture>
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
-		<time>17</time>
-		<address>Англия</address>
+		<time>19</time>
+		<home>Англия</home>
 		<email>https://www.instagram.com/curtisjr/</email>
 		<cost>10.0</cost>
-		<number>19</number>
+		<number>17</number>
 	</player>
 	<player>
 		<title>Минамино</title>
@@ -281,7 +281,7 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>25</time>
-		<address>Япония</address>
+		<home>Япония</home>
 		<email>https://www.instagram.com/takumi18minamino_official/</email>
 		<cost>10.0</cost>
 		<number>18</number>
@@ -298,7 +298,7 @@
 		<district>Защитник</district>
 		<subjects>Здоров</subjects>
 		<time>24</time>
-		<address>Греция</address>
+		<home>Греция</home>
 		<email>---</email>
 		<cost>9.0</cost>
 		<number>21</number>
@@ -316,7 +316,7 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>29</time>
-		<address>Швейцария</address>
+		<home>Швейцария</home>
 		<email>https://www.instagram.com/shaqirixherdan/</email>
 		<cost>16.0</cost>
 		<number>23</number>
@@ -333,7 +333,7 @@
 		<district>Защитник</district>
 		<subjects>Здоров</subjects>
 		<time>27</time>
-		<address>Шотландия</address>
+		<home>Шотландия</home>
 		<email>https://www.instagram.com/andyrobertson94/</email>
 		<cost>75.0</cost>
 		<number>26</number>
@@ -352,7 +352,7 @@
 		<district>Нападающий</district>
 		<subjects>Здоров</subjects>
 		<time>27</time>
-		<address>Бельгия</address>
+		<home>Бельгия</home>
 		<email>https://www.instagram.com/divockorigi/</email>
 		<cost>16.0</cost>
 		<number>27</number>		
@@ -368,7 +368,7 @@
 		<district>Защитник</district>
 		<subjects>Здоров</subjects>
 		<time>29</time>
-		<address>Камерун</address>
+		<home>Камерун</home>
 		<email>https://www.instagram.com/joelmatipfp/</email>
 		<cost>32.0</cost>
 		<number>32</number>	
@@ -382,7 +382,7 @@
 		<district>Вратарь</district>
 		<subjects>Здоров</subjects>
 		<time>22</time>
-		<address>Шотландия</address>
+		<home>Шотландия</home>
 		<email>https://www.instagram.com/caoimhinkelleher98/</email>
 		<cost>1.7</cost>
 		<number>62</number>	
@@ -397,7 +397,7 @@
 		<district>Защитник</district>
 		<subjects>Здоров</subjects>
 		<time>22</time>
-		<address>Англия</address>
+		<home>Англия</home>
 		<email>https://www.instagram.com/trentarnold66/</email>
 		<cost>110.0</cost>
 		<number>66</number>	
@@ -410,7 +410,7 @@
 		<district>Главный тренер</district>
 		<subjects>Другое</subjects>
 		<time>53</time>
-		<address>Германия</address>
+		<home>Германия</home>
 		<email>---</email>
 		<cost>0.0</cost>
 		<number>0</number>	
