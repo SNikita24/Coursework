@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Xml-документ, хранящий информацию о всех музеях, размещенных на сайте-->
+<!--Xml-документ, хранящий информацию о игроках, размещенных на сайте-->
 <!DOCTYPE players [
 <!ELEMENT players (player*)>
 <!ELEMENT player (title, info, picture+, district, subjects, time, address, email, cost, number)>
@@ -17,7 +17,7 @@
 
 <players>
 	<player>
-		<title>Алисон Бекер</title>
+		<title>Алисон</title>
 		<info>
 Алиссон Рамзес Бекер (порт. Alisson Ramses Becker; родился 2 октября 1992 года в Нову-Амбургу, Бразилия), более известный как Алиссон — бразильский футболист немецкого происхождения, вратарь клуба «Ливерпуль» и сборной Бразилии. Участник чемпионата мира 2018 года.
 Алиссон — воспитанник клуба «Интернасьонал». 17 февраля 2013 года в матче Лиги Гаушу против «Крузейро» из Порту-Алегри он дебютировал за основную команду. 25 августа в поединке против «Гояса» Алиссон дебютировал в бразильской Серии A. В 2015 году после того, как Дида завершил карьеру, он стал основным вратарём команды. В составе «Интернасьонала» Алиссон трижды выиграл Лигу Гаушу.
@@ -27,8 +27,8 @@
 		<district>Вратарь</district>
 		<subjects>Травмирован</subjects>
 		<time>28 </time>
-		<address>ул. Ленина, 20</address>
-		<email>nmmrb@bk.ru</email>
+		<address>Бразилия</address>
+		<email>https://www.instagram.com/alissonbecker/</email>
 		<cost>80.0</cost>
 		<number>1</number>
 	</player>
@@ -44,8 +44,8 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>27</time>
-		<address>пр-т. Победителей 8</address>
-		<email>museumww2@tut.by</email>
+		<address>Бразилия</address>
+		<email>---</email>
 		<cost>60.0</cost>
 		<number>3</number>
 	</player>
@@ -66,8 +66,8 @@
 		<district>Защитник</district>
 		<subjects>Травмирован</subjects>
 		<time>29</time>
-		<address>ул. К.Маркса,12</address>
-		<email>histmuseum@tut.by</email>
+		<address>Нидерланды</address>
+		<email>https://www.instagram.com/virgilvandijk/</email>
 		<cost>80.0</cost>
 		<number>4</number>
 	</player>
@@ -86,8 +86,8 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>30</time>
-		<address>площадь Свободы, 15</address>
-		<email>muzejminska@gmail.com</email>
+		<address>Нидерланды</address>
+		<email>https://www.instagram.com/gwijnaldum/</email>
 		<cost>40.0</cost>
 		<number>5</number>
 	</player>
@@ -108,8 +108,8 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>34</time>
-		<address>ул. Некрасова, 3</address>
-		<email>artmoderncenter@gmail.com</email>
+		<address>Англия</address>
+		<email>https://www.instagram.com/jamesmilnerofficial/</email>
 		<cost>5.0</cost>
 		<number>7</number>
 	</player>
@@ -126,8 +126,8 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>26</time>
-		<address>ул. З.Азгура, 8</address>
-		<email>museum.azgur@mail.ru</email>
+		<address>Гвинея</address>
+		<email>https://www.instagram.com/keitanabydeco/</email>
 		<cost>40.0</cost>
 		<number>8</number>
 	</player>
@@ -142,8 +142,8 @@
 		<district>Нападающий</district>
 		<subjects>Здоров</subjects>
 		<time>29</time>
-		<address>пр-т Независимости, 25</address>
-		<email>info@belarusmini.by</email>
+		<address>Бразилия</address>
+		<email>https://www.instagram.com/roberto_firmino/</email>
 		<cost>72.0</cost>
 		<number>9</number>
 	</player>
@@ -161,8 +161,8 @@
 		<district>Нападающий</district>
 		<subjects>Здоров</subjects>
 		<time>28</time>
-		<address>ул. М. Богдановича, 13</address>
-		<email>bellitmuseum@tut.by</email>
+		<address>Сенегал</address>
+		<email>https://www.instagram.com/sadiomaneofficiel/</email>
 		<cost>120.0</cost>
 		<number>10</number>
 	</player>
@@ -181,8 +181,8 @@
 		<district>Нападающий</district>
 		<subjects>Здоров</subjects>
 		<time>28</time>
-		<address>ул. Академическая, 5</address>
-		<email>muzeykolas@yandex.ru</email>
+		<address>Египет</address>
+		<email>https://www.instagram.com/roberto_firmino/</email>
 		<cost>120.0</cost>
 		<number>11</number>
 	</player>
@@ -197,8 +197,8 @@
 		<district>Защитник</district>
 		<subjects>Здоров</subjects>
 		<time>23</time>
-		<address>ул. Янки Купалы, 4</address>
-		<email>kupalamuseum@mail.ru</email>
+		<address>Англия</address>
+		<email>https://www.instagram.com/joegomez5/</email>
 		<cost>40.0</cost>
 		<number>12</number>
 	</player>
@@ -213,8 +213,8 @@
 		<district>Вратарь</district>
 		<subjects>Здоров</subjects>
 		<time>33</time>
-		<address>проезд Чижевских 8-2, 10</address>
-		<email>loshytsa@gmail.com</email>
+		<address>Испания</address>
+		<email>https://www.instagram.com/adr13nsanmiguel/</email>
 		<cost>4.5</cost>
 		<number>13</number>
 	</player>
@@ -230,8 +230,8 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>30</time>
-		<address>просп. Независимости, 116</address>
-		<email>inbox@nlb.by</email>
+		<address>Англия</address>
+		<email>https://www.instagram.com/jhenderson/</email>
 		<cost>28.7</cost>
 		<number>14</number>
 	</player>
@@ -245,9 +245,9 @@
 		<picture>Aleks.jpg</picture>
 		<district>Полузащитник</district>
 		<subjects>Травмирован</subjects>
-		<time>Круглосуточно</time>
-		<address>аллея Валунов</address>
-		<email>Отсутствует</email>
+		<time>27</time>
+		<address>Англия</address>
+		<email>alexoxchamberlain</email>
 		<cost>24.0</cost>
 		<number>15</number>
 	</player>
@@ -265,8 +265,8 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>17</time>
-		<address>ул. Фабрициуса, 28</address>
-		<email>Отсутствует</email>
+		<address>Англия</address>
+		<email>https://www.instagram.com/curtisjr/</email>
 		<cost>10.0</cost>
 		<number>19</number>
 	</player>
@@ -281,8 +281,8 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>25</time>
-		<address>Ул. Кальварийская, 37</address>
-		<email>office@beldorstroy.by</email>
+		<address>Япония</address>
+		<email>https://www.instagram.com/takumi18minamino_official/</email>
 		<cost>10.0</cost>
 		<number>18</number>
 	</player>
@@ -298,8 +298,8 @@
 		<district>Защитник</district>
 		<subjects>Здоров</subjects>
 		<time>24</time>
-		<address>ул. Чкалова, 38</address>
-		<email>Отсутствует</email>
+		<address>Греция</address>
+		<email>---</email>
 		<cost>9.0</cost>
 		<number>21</number>
 	</player>
@@ -316,8 +316,8 @@
 		<district>Полузащитник</district>
 		<subjects>Здоров</subjects>
 		<time>29</time>
-		<address>ул. Долгобродская 35</address>
-		<email>museum@belarus-tractor.com</email>
+		<address>Швейцария</address>
+		<email>https://www.instagram.com/shaqirixherdan/</email>
 		<cost>16.0</cost>
 		<number>23</number>
 	</player>
@@ -333,8 +333,8 @@
 		<district>Защитник</district>
 		<subjects>Здоров</subjects>
 		<time>27</time>
-		<address>ст.м. Могилевская</address>
-		<email>mail@metropoliten.by</email>
+		<address>Шотландия</address>
+		<email>https://www.instagram.com/andyrobertson94/</email>
 		<cost>75.0</cost>
 		<number>26</number>
 	</player>
@@ -352,8 +352,8 @@
 		<district>Нападающий</district>
 		<subjects>Здоров</subjects>
 		<time>27</time>
-		<address>ст.м. Могилевская</address>
-		<email>mail@metropoliten.by</email>
+		<address>Бельгия</address>
+		<email>https://www.instagram.com/divockorigi/</email>
 		<cost>16.0</cost>
 		<number>27</number>		
 	</player>
@@ -368,8 +368,8 @@
 		<district>Защитник</district>
 		<subjects>Здоров</subjects>
 		<time>29</time>
-		<address>ст.м. Могилевская</address>
-		<email>mail@metropoliten.by</email>
+		<address>Камерун</address>
+		<email>https://www.instagram.com/joelmatipfp/</email>
 		<cost>32.0</cost>
 		<number>32</number>	
 	</player>
@@ -382,8 +382,8 @@
 		<district>Вратарь</district>
 		<subjects>Здоров</subjects>
 		<time>22</time>
-		<address>ст.м. Могилевская</address>
-		<email>mail@metropoliten.by</email>
+		<address>Шотландия</address>
+		<email>https://www.instagram.com/caoimhinkelleher98/</email>
 		<cost>1.7</cost>
 		<number>62</number>	
 	</player>
@@ -397,8 +397,8 @@
 		<district>Защитник</district>
 		<subjects>Здоров</subjects>
 		<time>22</time>
-		<address>ст.м. Могилевская</address>
-		<email>mail@metropoliten.by</email>
+		<address>Англия</address>
+		<email>https://www.instagram.com/trentarnold66/</email>
 		<cost>110.0</cost>
 		<number>66</number>	
 	</player>
@@ -410,8 +410,8 @@
 		<district>Главный тренер</district>
 		<subjects>Другое</subjects>
 		<time>53</time>
-		<address>ст.м. Могилевская</address>
-		<email>mail@metropoliten.by</email>
+		<address>Германия</address>
+		<email>---</email>
 		<cost>0.0</cost>
 		<number>0</number>	
 	</player>

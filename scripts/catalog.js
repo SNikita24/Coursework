@@ -18,7 +18,7 @@ function Player(title, picture, info, district, tag, cost) {
 	this.info = info.slice(0, firstSpace) + "...";
 }
 
-//Функция, получающая из локального хранилища индекс позиции и устанавливающая соответствующий району checkbox в состояние "выбрано"
+//Функция, получающая из локального хранилища индекс позиции и устанавливающая соответствующий позиции checkbox в состояние "выбрано"
 
 function check() {
 	var districts = document.getElementById("filters");
@@ -50,7 +50,7 @@ function PlayerParser() {
 	return parser.parseFromString(xmlDoc, "application/xml");
 }
 
-//Функция вывода экземпляра класса "Player" на страницу
+//Функция вывода экземпляра класса игрок на страницу
 
 function ToBlock(player) {
 	var main = document.createElement("div");
@@ -116,7 +116,7 @@ function Reset() {
 	Filters();
 }
 
-//Фильтрация массива музеев по параметрам из формы
+//Фильтрация массива игроков по параметрам из формы
 
 function Filters() {
 	var searchedPlayers = new Array();
