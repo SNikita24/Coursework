@@ -62,7 +62,7 @@ for(var i = 0; i < imagesName.length; i++){
 	gallery.appendChild(images[i]);
 }
 
-document.getElementById("address").innerHTML += (" " + player.getElementsByTagName("address")[0].textContent);
+document.getElementById("home").innerHTML += (" " + player.getElementsByTagName("home")[0].textContent);
 document.getElementById("time").innerHTML += (" " + player.getElementsByTagName("time")[0].textContent);
 document.getElementById("phone").innerHTML += (" " + player.getElementsByTagName("number")[0].textContent);
 document.getElementById("email").innerHTML += (" " + player.getElementsByTagName("email")[0].textContent);

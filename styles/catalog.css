@@ -212,7 +212,7 @@ select{
 		float: none;
 		margin: 0px;
 	}
-	.player .name{
+	.player .name{ 
 		font-size: 14px;
 	}
 	#go-top {
